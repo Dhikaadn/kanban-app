@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{template "general/header"}}
+    </head>
+    <body>
+        <div class="flex justify-center mt-28">
+            <div class="bg-gradient-to-b from-sky-700 to-sky-400 h-60 w-96 flex justify-center rounded-lg">
+                <form action="/category/create" method="post">
+                    <center><h3 class="m-4 text-xl text-white font-bold">Add Category</h3></center>
+                    <br>
+                    <h1 class="text-white">Masukkan kategori</h1>
+                    <input class="rounded-lg h-8 w-80 pl-4" id="category" type="text" placeholder="Masukkan kategori" name="type" />
+                    <br>
+                    <div class="m-4 ml-60">
+                        <button type="submit" class="bg-sky-200 px-3 py-2 rounded-lg hover:bg-sky-100">Add</button>
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

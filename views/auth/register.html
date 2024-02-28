@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{template "general/header"}}
+    </head>
+    <body>
+    <div class="flex justify-center mt-28">
+        <div class="bg-gradient-to-b from-sky-700 to-sky-400 h-96 w-96 flex justify-center rounded-lg">
+            <form action="/register/process" method="post">
+                <center><h1 class="m-4 text-xl text-white font-bold">Register</h1></center>
+                <br>
+                <h1 class="text-white">Masukkan nama lengkap</h1>
+                <input class="rounded-lg h-8 w-80 pl-4" type="text" placeholder="Masukkan nama lengkap" name="fullname" />
+                <br>
+                <br>
+                <h1 class="text-white">Masukkan email</h1>
+                <input class="rounded-lg h-8 w-80 pl-4" type="email" placeholder="Masukkan email anda" name="email" />
+                <br>
+                <br>
+                <h1 class="text-white">Masukkan password</h1>
+                <input class="rounded-lg h-8 w-80 pl-4" type="password" placeholder="*********************" name="password" />
+                <br>
+                <div class="m-4 ml-52">
+                    <a href="/login">Login</a>
+                    <button type="submit" class="bg-sky-200 px-3 py-2 rounded-lg hover:bg-sky-100">Register</button>
+                </div>   
+            </form>
+        </div>
+    </div>
+</html>
